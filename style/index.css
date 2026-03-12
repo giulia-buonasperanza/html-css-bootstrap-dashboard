@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;}
 
-body{
+.wrapper{
     margin:20px;
 }
 
@@ -27,7 +27,16 @@ body{
     {
         display:table-cell;
     } 
-    
-}
 
+    }
+    
+@media screen and (min-width: 992px) {
+    .wrapper
+        {
+            display:flex;
+           gap:20px;
+        }
+    
+    .
+    }
 
