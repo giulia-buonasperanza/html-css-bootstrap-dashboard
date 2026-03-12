@@ -1,6 +1,4 @@
-container-fluid
- header
-   navbar
+navbar
     logo
     hamburger menu
 
