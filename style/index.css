@@ -5,3 +5,25 @@
 
 
 
+.header-table
+    {
+        display:flex;
+        justify-content: space-between;
+        margin:15px;
+    }
+
+
+.table .data-prestito
+    {
+        display:none;
+    }
+
+@media screen and (min-width: 768px) {
+   .table .data-prestito
+    {
+        display:table-cell;
+    } 
+    
+}
+
+
