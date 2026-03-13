@@ -45,22 +45,51 @@
         </div>
     </nav>
     <main class="m-3">
-       
-       
+
+
         <form>
-            
+
             <div class="container">
                 <div class="row">
-                     <div class="col d-block"><h1>Nuovi Libri</h1></div>
-                    <div class="col col-6">
-                    
-                    </div>                       
-                    <div class="col col-6">
-                        
+                    <div class="col">
+                        <h1>Nuovi Libri</h1>
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="row">
+                        <div class="col col-6 mb-3">
+                            <label for="Name" class="form-label ps-2">Nome Autore</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Nome Autore">
+                        </div>
+                        <div class="col col-6 mb-3">
+                            <label for="Surname" class="form-label ps-2">Cognome Autore</label>
+                            <input type="text" class="form-control" id="Surname" placeholder="Cognome Autore">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-12 mb-3">
+                            <label for="Title" class="form-label ps-2">Titolo</label>
+                            <input type="text" class="form-control" id="Title"
+                                placeholder="Inserisci il titolo del libro">
+                            <div id="titolo-it" class="form-text">Titolo versione italiana</div>
+                        </div>
+
+                        <div class="col col-12 mb-3">
+                            <label for="genre" class="form-label ps-2">Genere</label>
+                            <select class="form-select" id="genre">
+                                <option selected disabled>Scegli un genere</option>
+                                <option vale="0">Giallo</option>
+                                <option value="1">Fantasy</option>
+                                <option value="2">Horror</option>
+                                <option value="3">Romantico</option>
+                                <option value="3">Fantascienza</option>
+                                <option value="3">Biografico</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 mb-3">
+                            <label for="year" class="form-label ps-2">Anno di Pubblicazione</label>
+                            <input type="text" class="form-control" id="year"
+                                placeholder="Inserisci l'anno di pubblicazione">
+                        </div>
+                    </div>
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
