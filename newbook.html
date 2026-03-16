@@ -74,25 +74,27 @@
                     <div class="col col-12 col-lg-4 mb-3">
                         <label for="genre" class="form-label ps-2">Genere</label>
                         <select class="form-select" id="genre" required>
-                            <option selected disabled>Scegli un genere</option>
-                            <option vale="0">Giallo</option>
-                            <option value="1">Fantasy</option>
-                            <option value="2">Horror</option>
-                            <option value="3">Romantico</option>
-                            <option value="3">Fantascienza</option>
-                            <option value="3">Biografico</option>
+                            <option selected disabled value="">Scegli un genere</option>
+                            <option vale="Fiction">Narrativa</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Romance">Romantico</option>
+                            <option value="Sci-fi">Fantascienza</option>
+                            <option value="Biography">Biografico</option>
                         </select>
+                        <!--value=""per far si che nel controllo del required non venga considerato-->
                     </div>
                     <div class="col col-12 col-lg-4 mb-3">
                         <label for="year" class="form-label ps-2">Anno di Pubblicazione</label>
-                        <input type="data" min="01/01/1800" class="form-control" id="year"
+                        <input type="number" min="1800" max="2026" class="form-control" id="year"
                             placeholder="Inserisci l'anno di pubblicazione" required>
-                    </div>
+                    </div>    
+                    <!--con Java posso rendere il carattere max dinamico-->
                     <div class="col col-12 col-lg-4 mb-5">
                         <label for="ISBN" class="form-label ps-2">ISBN#</label>
-                        <input type="text" class="form-control" id="ISBN" placeholder="inserisci il codice #ISBN" required>
+                        <input pattern="[A-Z a-z]{3}" type="text" class="form-control" id="ISBN" placeholder="inserisci il codice #ISBN" required>
                     </div>
-
+                    <!--pattern per inserire un obbligo di "formula" precisa da inserire-->
                     <hr>
                     <div class="col col-12">
                         <label class="ps-2" for="floatingTextarea2">Note</label>
